@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.4 on win32)" generated="2025-08-09T23:55:59.357416" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\Users\avina\PycharmProjects\saucedemo-robot\Keywords\login.robot">
+<test id="s1-t1" name="Validate all Login" line="10">
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-08-09T23:55:59.840411" level="INFO">Length is 5.</msg>
+<msg time="2025-08-09T23:55:59.842421" level="INFO">${count} = 5</msg>
+<var>${count}</var>
+<arg>${USER_ID}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-08-09T23:55:59.840411" elapsed="0.002010"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-08-09T23:55:59.842421" level="INFO">${user_id} = standard_user</msg>
+<var>${user_id}</var>
+<arg>${user_id}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-08-09T23:55:59.842421" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-08-09T23:55:59.842421" level="INFO">${password} = secret_sauce</msg>
+<var>${password}</var>
+<arg>${password}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-08-09T23:55:59.842421" elapsed="0.000000"/>
+</kw>
+<kw name="Login With Valid Credentials">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-09T23:55:59.842421" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>https://www.saucedemo.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-09T23:55:59.842421" elapsed="2.280498"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${USERANME_FEILD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-09T23:56:02.122919" elapsed="0.026658"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PASSWORD_FEILD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-09T23:56:02.150578" elapsed="0.016227"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-09T23:56:02.166805" level="INFO">Typing text 'standard_user' into text field '//input[@id ='user-name']'.</msg>
+<arg>${USERANME_FEILD}</arg>
+<arg>${user_id}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-09T23:56:02.166805" elapsed="0.120519"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-09T23:56:02.288494" level="INFO">Typing text 'secret_sauce' into text field '//input[@id ='password']'.</msg>
+<arg>${PASSWORD_FEILD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-09T23:56:02.287324" elapsed="0.089672"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-08-09T23:56:02.380302" level="INFO">Clicking button '//input[@id ='login-button']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-09T23:56:02.379607" elapsed="0.111095"/>
+</kw>
+<arg>${user_id}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-08-09T23:55:59.842421" elapsed="2.648281"/>
+</kw>
+<var name="${index}">0</var>
+<status status="PASS" start="2025-08-09T23:55:59.842421" elapsed="2.648281"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-08-09T23:56:02.491702" level="INFO">${user_id} = t</msg>
+<var>${user_id}</var>
+<arg>${user_id}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-08-09T23:56:02.491702" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-08-09T23:56:02.492701" level="INFO">${password} = e</msg>
+<var>${password}</var>
+<arg>${password}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-08-09T23:56:02.491702" elapsed="0.000999"/>
+</kw>
+<kw name="Login With Valid Credentials">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-09T23:56:02.493705" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>https://www.saucedemo.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-09T23:56:02.492701" elapsed="1.647489"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${USERANME_FEILD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-09T23:56:04.140190" elapsed="0.729952"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PASSWORD_FEILD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-09T23:56:04.870142" elapsed="0.020702"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-09T23:56:04.891614" level="INFO">Typing text 't' into text field '//input[@id ='user-name']'.</msg>
+<arg>${USERANME_FEILD}</arg>
+<arg>${user_id}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-09T23:56:04.891614" elapsed="0.100196"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-09T23:56:04.991810" level="INFO">Typing text 'e' into text field '//input[@id ='password']'.</msg>
+<arg>${PASSWORD_FEILD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-09T23:56:04.991810" elapsed="0.045665"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-08-09T23:56:05.037475" level="INFO">Clicking button '//input[@id ='login-button']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-09T23:56:05.037475" elapsed="0.078599"/>
+</kw>
+<arg>${user_id}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-08-09T23:56:02.492701" elapsed="2.624449"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2025-08-09T23:56:02.491702" elapsed="2.625448"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-08-09T23:56:05.117150" level="FAIL">String '${user_id}' has no item in index 2.</msg>
+<var>${user_id}</var>
+<arg>${user_id}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="FAIL" start="2025-08-09T23:56:05.117150" elapsed="0.000000">String '${user_id}' has no item in index 2.</status>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${password}</var>
+<arg>${password}[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-08-09T23:56:05.117150" elapsed="0.000000"/>
+</kw>
+<kw name="Login With Valid Credentials">
+<arg>${user_id}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2025-08-09T23:56:05.117150" elapsed="0.000000"/>
+</kw>
+<var name="${index}">2</var>
+<status status="FAIL" start="2025-08-09T23:56:05.117150" elapsed="0.000000">String '${user_id}' has no item in index 2.</status>
+</iter>
+<var>${index}</var>
+<value>${count}</value>
+<status status="FAIL" start="2025-08-09T23:55:59.842421" elapsed="5.274729">String '${user_id}' has no item in index 2.</status>
+</for>
+<status status="FAIL" start="2025-08-09T23:55:59.837737" elapsed="5.279413">String '${user_id}' has no item in index 2.</status>
+</test>
+<status status="FAIL" start="2025-08-09T23:55:59.388385" elapsed="5.732577"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login" id="s1" pass="0" fail="1" skip="0">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
