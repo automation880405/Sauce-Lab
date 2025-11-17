@@ -1,232 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.12.4 on win32)" generated="2025-08-10T10:26:18.119228" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.12.4 on win32)" generated="2025-08-10T10:29:06.049407" rpa="false" schemaversion="5">
 <suite id="s1" name="Login" source="C:\Users\avina\PycharmProjects\saucedemo-robot\Keywords\login.robot">
 <test id="s1-t1" name="Standard User Login" line="17">
 <kw name="Login With Valid Credentials">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:18.629082" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<msg time="2025-08-10T10:29:06.793669" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
 <arg>https://www.saucedemo.com</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-10T10:26:18.629082" elapsed="5.287912"/>
+<status status="PASS" start="2025-08-10T10:29:06.793669" elapsed="3.185566"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${USERANME_FEILD}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-10T10:26:23.919015" elapsed="0.142948"/>
+<status status="PASS" start="2025-08-10T10:29:09.979235" elapsed="0.050040"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${PASSWORD_FEILD}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-10T10:26:24.061963" elapsed="0.056823"/>
+<status status="PASS" start="2025-08-10T10:29:10.029275" elapsed="0.029981"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:24.118786" level="INFO">Typing text 'standard_user' into text field '//input[@id ='user-name']'.</msg>
+<msg time="2025-08-10T10:29:10.059256" level="INFO">Typing text 'standard_user' into text field '//input[@id ='user-name']'.</msg>
 <arg>${USERANME_FEILD}</arg>
 <arg>${user_id}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-10T10:26:24.118786" elapsed="0.286142"/>
+<status status="PASS" start="2025-08-10T10:29:10.059256" elapsed="0.177814"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:24.409877" level="INFO">Typing text 'secret_sauce' into text field '//input[@id ='password']'.</msg>
+<msg time="2025-08-10T10:29:10.239087" level="INFO">Typing text 'secret_sauce' into text field '//input[@id ='password']'.</msg>
 <arg>${PASSWORD_FEILD}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-10T10:26:24.404928" elapsed="0.190294"/>
+<status status="PASS" start="2025-08-10T10:29:10.237070" elapsed="0.146102"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:24.597257" level="INFO">Clicking button '//input[@id ='login-button']'.</msg>
+<msg time="2025-08-10T10:29:10.383172" level="INFO">Clicking button '//input[@id ='login-button']'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-10T10:26:24.597257" elapsed="0.291794"/>
+<status status="PASS" start="2025-08-10T10:29:10.383172" elapsed="0.160517"/>
 </kw>
 <arg>standard_user</arg>
 <arg>secret_sauce</arg>
-<status status="PASS" start="2025-08-10T10:26:18.629082" elapsed="6.259969"/>
+<status status="PASS" start="2025-08-10T10:29:06.789252" elapsed="3.754437"/>
 </kw>
-<status status="PASS" start="2025-08-10T10:26:18.626138" elapsed="6.262913"/>
+<status status="PASS" start="2025-08-10T10:29:06.789252" elapsed="3.754437"/>
 </test>
 <test id="s1-t2" name="Locked Out User Login" line="18">
 <kw name="Login With Valid Credentials">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:24.893758" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<msg time="2025-08-10T10:29:10.543689" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
 <arg>https://www.saucedemo.com</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-10T10:26:24.893166" elapsed="2.461956"/>
+<status status="PASS" start="2025-08-10T10:29:10.543689" elapsed="2.457836"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${USERANME_FEILD}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-10T10:26:27.357129" elapsed="0.728798"/>
+<status status="PASS" start="2025-08-10T10:29:13.001525" elapsed="0.042891"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${PASSWORD_FEILD}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-10T10:26:28.085927" elapsed="0.071578"/>
+<status status="PASS" start="2025-08-10T10:29:13.044416" elapsed="0.063801"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:28.159708" level="INFO">Typing text 'locked_out_user' into text field '//input[@id ='user-name']'.</msg>
+<msg time="2025-08-10T10:29:13.109229" level="INFO">Typing text 'locked_out_user' into text field '//input[@id ='user-name']'.</msg>
 <arg>${USERANME_FEILD}</arg>
 <arg>${user_id}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-10T10:26:28.159020" elapsed="0.206287"/>
+<status status="PASS" start="2025-08-10T10:29:13.108217" elapsed="0.340940"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:28.365307" level="INFO">Typing text 'secret_sauce' into text field '//input[@id ='password']'.</msg>
+<msg time="2025-08-10T10:29:13.451684" level="INFO">Typing text 'secret_sauce' into text field '//input[@id ='password']'.</msg>
 <arg>${PASSWORD_FEILD}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-10T10:26:28.365307" elapsed="0.135122"/>
+<status status="PASS" start="2025-08-10T10:29:13.451684" elapsed="0.150854"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:28.500429" level="INFO">Clicking button '//input[@id ='login-button']'.</msg>
+<msg time="2025-08-10T10:29:13.602538" level="INFO">Clicking button '//input[@id ='login-button']'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-10T10:26:28.500429" elapsed="0.123652"/>
+<status status="PASS" start="2025-08-10T10:29:13.602538" elapsed="0.122660"/>
 </kw>
 <arg>locked_out_user</arg>
 <arg>secret_sauce</arg>
-<status status="PASS" start="2025-08-10T10:26:24.891425" elapsed="3.732656"/>
+<status status="PASS" start="2025-08-10T10:29:10.543689" elapsed="3.181509"/>
 </kw>
-<status status="PASS" start="2025-08-10T10:26:24.889051" elapsed="3.735030"/>
+<status status="PASS" start="2025-08-10T10:29:10.543689" elapsed="3.184156"/>
 </test>
 <test id="s1-t3" name="Problem User Login" line="19">
 <kw name="Login With Valid Credentials">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:28.629013" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<msg time="2025-08-10T10:29:13.731786" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
 <arg>https://www.saucedemo.com</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-10T10:26:28.629013" elapsed="3.073363"/>
+<status status="PASS" start="2025-08-10T10:29:13.729907" elapsed="2.349122"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${USERANME_FEILD}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-10T10:26:31.702376" elapsed="0.051624"/>
+<status status="PASS" start="2025-08-10T10:29:16.079029" elapsed="0.045872"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${PASSWORD_FEILD}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-10T10:26:31.754000" elapsed="0.032977"/>
+<status status="PASS" start="2025-08-10T10:29:16.126050" elapsed="0.027275"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:31.788998" level="INFO">Typing text 'problem_user' into text field '//input[@id ='user-name']'.</msg>
+<msg time="2025-08-10T10:29:16.159308" level="INFO">Typing text 'problem_user' into text field '//input[@id ='user-name']'.</msg>
 <arg>${USERANME_FEILD}</arg>
 <arg>${user_id}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-10T10:26:31.788998" elapsed="0.164762"/>
+<status status="PASS" start="2025-08-10T10:29:16.158296" elapsed="0.222416"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:31.953760" level="INFO">Typing text 'secret_sauce' into text field '//input[@id ='password']'.</msg>
+<msg time="2025-08-10T10:29:16.382998" level="INFO">Typing text 'secret_sauce' into text field '//input[@id ='password']'.</msg>
 <arg>${PASSWORD_FEILD}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-10T10:26:31.953760" elapsed="0.186805"/>
+<status status="PASS" start="2025-08-10T10:29:16.382998" elapsed="0.189813"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:32.142781" level="INFO">Clicking button '//input[@id ='login-button']'.</msg>
+<msg time="2025-08-10T10:29:16.574876" level="INFO">Clicking button '//input[@id ='login-button']'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-10T10:26:32.140565" elapsed="0.239221"/>
+<status status="PASS" start="2025-08-10T10:29:16.572811" elapsed="0.269772"/>
 </kw>
 <arg>problem_user</arg>
 <arg>secret_sauce</arg>
-<status status="PASS" start="2025-08-10T10:26:28.626357" elapsed="3.753429"/>
+<status status="PASS" start="2025-08-10T10:29:13.729907" elapsed="3.112676"/>
 </kw>
-<status status="PASS" start="2025-08-10T10:26:28.626357" elapsed="3.753429"/>
+<status status="PASS" start="2025-08-10T10:29:13.728879" elapsed="3.114929"/>
 </test>
 <test id="s1-t4" name="Performance Glitch Login" line="20">
 <kw name="Login With Valid Credentials">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:32.385462" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<msg time="2025-08-10T10:29:16.844386" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
 <arg>https://www.saucedemo.com</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-10T10:26:32.383452" elapsed="2.767635"/>
+<status status="PASS" start="2025-08-10T10:29:16.844386" elapsed="2.728553"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${USERANME_FEILD}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-10T10:26:35.151087" elapsed="0.080786"/>
+<status status="PASS" start="2025-08-10T10:29:19.572939" elapsed="0.156747"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${PASSWORD_FEILD}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-10T10:26:35.231873" elapsed="0.122272"/>
+<status status="PASS" start="2025-08-10T10:29:19.730828" elapsed="0.049939"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:35.355292" level="INFO">Typing text 'performance_glitch_user' into text field '//input[@id ='user-name']'.</msg>
+<msg time="2025-08-10T10:29:19.782776" level="INFO">Typing text 'performance_glitch_user' into text field '//input[@id ='user-name']'.</msg>
 <arg>${USERANME_FEILD}</arg>
 <arg>${user_id}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-10T10:26:35.355292" elapsed="0.306633"/>
+<status status="PASS" start="2025-08-10T10:29:19.780767" elapsed="0.298632"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:35.662941" level="INFO">Typing text 'secret_sauce' into text field '//input[@id ='password']'.</msg>
+<msg time="2025-08-10T10:29:20.079399" level="INFO">Typing text 'secret_sauce' into text field '//input[@id ='password']'.</msg>
 <arg>${PASSWORD_FEILD}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-10T10:26:35.662941" elapsed="0.175908"/>
+<status status="PASS" start="2025-08-10T10:29:20.079399" elapsed="0.222357"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:35.838849" level="INFO">Clicking button '//input[@id ='login-button']'.</msg>
+<msg time="2025-08-10T10:29:20.302266" level="INFO">Clicking button '//input[@id ='login-button']'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-10T10:26:35.838849" elapsed="5.227124"/>
+<status status="PASS" start="2025-08-10T10:29:20.302266" elapsed="5.220559"/>
 </kw>
 <arg>performance_glitch_user</arg>
 <arg>secret_sauce</arg>
-<status status="PASS" start="2025-08-10T10:26:32.383452" elapsed="8.682521"/>
+<status status="PASS" start="2025-08-10T10:29:16.844386" elapsed="8.678439"/>
 </kw>
-<status status="PASS" start="2025-08-10T10:26:32.382144" elapsed="8.685744"/>
+<status status="PASS" start="2025-08-10T10:29:16.844386" elapsed="8.682343"/>
 </test>
 <test id="s1-t5" name="Error User Login" line="21">
 <kw name="Login With Valid Credentials">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:41.078209" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<msg time="2025-08-10T10:29:25.530300" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
 <arg>https://www.saucedemo.com</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-10T10:26:41.076199" elapsed="2.801049"/>
+<status status="PASS" start="2025-08-10T10:29:25.530300" elapsed="2.721309"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${USERANME_FEILD}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-10T10:26:43.878318" elapsed="0.056408"/>
+<status status="PASS" start="2025-08-10T10:29:28.251609" elapsed="0.042444"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${PASSWORD_FEILD}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-10T10:26:43.934726" elapsed="0.034143"/>
+<status status="PASS" start="2025-08-10T10:29:28.294053" elapsed="0.055029"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:43.968869" level="INFO">Typing text 'error_user' into text field '//input[@id ='user-name']'.</msg>
+<msg time="2025-08-10T10:29:28.349082" level="INFO">Typing text 'error_user' into text field '//input[@id ='user-name']'.</msg>
 <arg>${USERANME_FEILD}</arg>
 <arg>${user_id}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-10T10:26:43.968869" elapsed="0.187026"/>
+<status status="PASS" start="2025-08-10T10:29:28.349082" elapsed="0.280215"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:44.155895" level="INFO">Typing text 'secret_sauce' into text field '//input[@id ='password']'.</msg>
+<msg time="2025-08-10T10:29:28.631616" level="INFO">Typing text 'secret_sauce' into text field '//input[@id ='password']'.</msg>
 <arg>${PASSWORD_FEILD}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-10T10:26:44.155895" elapsed="0.161912"/>
+<status status="PASS" start="2025-08-10T10:29:28.629837" elapsed="0.212286"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-08-10T10:26:44.320917" level="INFO">Clicking button '//input[@id ='login-button']'.</msg>
+<msg time="2025-08-10T10:29:28.842123" level="INFO">Clicking button '//input[@id ='login-button']'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-10T10:26:44.318814" elapsed="0.161487"/>
+<status status="PASS" start="2025-08-10T10:29:28.842123" elapsed="0.289240"/>
 </kw>
 <arg>error_user</arg>
 <arg>secret_sauce</arg>
-<status status="PASS" start="2025-08-10T10:26:41.076199" elapsed="3.404102"/>
+<status status="PASS" start="2025-08-10T10:29:25.530300" elapsed="3.601063"/>
 </kw>
-<status status="PASS" start="2025-08-10T10:26:41.072058" elapsed="3.408243"/>
+<status status="PASS" start="2025-08-10T10:29:25.526729" elapsed="3.606385"/>
 </test>
-<status status="PASS" start="2025-08-10T10:26:18.124732" elapsed="26.364335"/>
+<status status="PASS" start="2025-08-10T10:29:06.049407" elapsed="23.085716"/>
 </suite>
 <statistics>
 <total>
