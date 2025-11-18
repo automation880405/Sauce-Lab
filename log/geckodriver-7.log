@@ -1,16 +1,16 @@
-1763443966256	geckodriver	INFO	Listening on 127.0.0.1:62892
-1763443969373	mozrunner::runner	INFO	Running command: "C:\\Users\\avina\\.cache\\selenium\\firefox\\win64\\145.0\\firefox.exe" "--marionette" "--remote-debugging- ... 3" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\avina\\AppData\\Local\\Temp\\rust_mozprofileunbVbt"
+1763468707421	geckodriver	INFO	Listening on 127.0.0.1:59236
+1763468710609	mozrunner::runner	INFO	Running command: "C:\\Users\\avina\\.cache\\selenium\\firefox\\win64\\145.0\\firefox.exe" "--marionette" "--remote-debugging- ... 7" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\avina\\AppData\\Local\\Temp\\rust_mozprofilerNKn7C"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
 Dynamically enable window occlusion 0
-1763443969794	Marionette	INFO	Marionette enabled
-1763443969870	Marionette	INFO	Listening on port 62901
-Read port: 62901
-WebDriver BiDi listening on ws://127.0.0.1:62893
-1763443969925	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1763468711453	Marionette	INFO	Marionette enabled
+1763468711579	Marionette	INFO	Listening on port 59247
+WebDriver BiDi listening on ws://127.0.0.1:59237
+Read port: 59247
+1763468711741	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
-1763443973663	Marionette	INFO	Stopped listening on port 62901
+1763468720858	Marionette	INFO	Stopped listening on port 59247
 Dynamically enable window occlusion 1
 console.error: "Failed to fetch https://spocs.getpocket.com/user:" "NetworkError when attempting to fetch resource."
 console.error: (new TypeError("NetworkError when attempting to fetch resource.", ""))

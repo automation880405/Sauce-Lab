@@ -1,20 +1,28 @@
 *** Settings ***
-Library    ../Custom_Library/ChromeLibrary.py
 Library    SeleniumLibrary
-Resource    ../Resources/locators.robot
+Library    OperatingSystem
+Resource    ../Keywords/Inventory.robot
+Resource    ../Keywords/login.robot
 Resource    ../Resources/variables.robot
+Resource    ../Keywords/CartPage.robot
+Resource    ../Keywords/checkout.robot
+Resource    ../Keywords/Complete.robot
+Library    Process
+
 
 #Test Template    Login With Valid Credentials
 
 
 *** Keywords ***
+Delete Old Logs
+    Remove Files    geckodriver-*.log
 Open SauceDemo Login Page
-
     Open Browser    ${URL}    Firefox
-
-
-   
     Maximize Browser Window
+
+#Close Chrome Password Popup
+
+
 
 Open Chrome Without Popups
     ${driver}=    Create Custom Driver
@@ -29,6 +37,16 @@ Login With Valid Credentials
     Input Text      ${USERANME_FEILD}    ${user_id}
     Input Text      ${PASSWORD_FEILD}    ${password}
     Click Button    ${LOGIN_BUTTON}
+
+validate different User login
+    FOR    ${user}    IN    @{USERS}
+        Open SauceDemo Login Page
+        Login With Valid Credentials    ${user}    ${PASSWORD}
+        Verify Successful Login
+        Close Browser Session
+    END
+
+
 
 Verify Successful Login
     Page Should Contain Element    ${INVENTORY_PAGE}

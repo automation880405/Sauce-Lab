@@ -3,6 +3,7 @@ ${URL}      https://www.saucedemo.com
 ${Broswer}  chrome
 ${user_id}  standard_user
 ${password}  secret_sauce
+${Edge}  C:/Users/avina/Broswer_Driver/msedgedriver.exe
 @{USERS}
 ...    standard_user
 ...    visual_user

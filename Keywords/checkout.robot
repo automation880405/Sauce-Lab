@@ -12,6 +12,7 @@ Fill the user name and address
     Input Text    id:postal-code    560037
     Wait Until Element Is Visible    id:continue
     Click Button    id:continue
+    sleep    3s
 click on Finish button
     Wait Until Element Is Visible    id:finish
     Click Button    id:finish
