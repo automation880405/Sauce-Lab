@@ -4,7 +4,7 @@ Resource    ../Resources/locators.robot
 Resource    ../Resources/variables.robot
 Resource    ../Resources/Login_once.robot
 
-Suite Setup  Login sauce Lab
+
 
 
 
