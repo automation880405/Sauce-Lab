@@ -6,10 +6,7 @@ Resource    ../Resources/Login_once.robot
 
 Suite Setup  Login sauce Lab
 
-*** Test Cases ***
-Get the List of product
-    List of products and click on each Element
-    Go To cart and check
+
 
 
 *** Keywords ***

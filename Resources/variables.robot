@@ -11,4 +11,8 @@ ${password}  secret_sauce
 ...    error_user
 
 ${PASSWORD}    secret_sauce
-
+@{CHROME_ARGS}
+...    --disable-features=PasswordCheck,SafetyCheck,PasswordLeakDetection
+...    --disable-popup-blocking
+...    --disable-notifications
+...    --disable-blink-features=AutomationControlled

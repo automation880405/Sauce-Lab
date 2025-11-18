@@ -1,14 +1,25 @@
 *** Settings ***
+Library    ../Custom_Library/ChromeLibrary.py
 Library    SeleniumLibrary
 Resource    ../Resources/locators.robot
 Resource    ../Resources/variables.robot
+
 #Test Template    Login With Valid Credentials
 
 
 *** Keywords ***
 Open SauceDemo Login Page
-    Open Browser    ${URL}    chrome
+
+    Open Browser    ${URL}    Firefox
+
+
+   
     Maximize Browser Window
+
+Open Chrome Without Popups
+    ${driver}=    Create Custom Driver
+    Create WebDriver    Chrome    driver=${driver}
+    Go To    ${URL}
 
 Login With Valid Credentials
     [Arguments]     ${user_id}     ${password}
