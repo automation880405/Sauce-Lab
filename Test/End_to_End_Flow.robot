@@ -5,6 +5,7 @@ Resource    ../Resources/variables.robot
 Resource    ../Keywords/CartPage.robot
 Resource    ../Keywords/checkout.robot
 Resource    ../Keywords/Complete.robot
+Test Setup  Open SauceDemo Login Page
 Test Teardown   Close Browser
 #Test Template    Login Test Template
 
@@ -14,8 +15,8 @@ Validate Multiple User Login
 
 Validate end to end flow of application
     [Tags]      regression
-    Open SauceDemo Login Page
-    Login With Valid Credentials    ${user_id}    ${PASSWORD}
+
+    Login With Valid Credentials    ${USER_ID}    ${PASSWORD}
     List of products and click on each Element
     Go To cart and check
     Click on Checkout button

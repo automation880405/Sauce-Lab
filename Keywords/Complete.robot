@@ -1,8 +1,11 @@
 *** Settings ***
 Library     SeleniumLibrary
+Resource    ../Resources/variables.robot
+Resource    ../Resources/locators.robot
 
 *** Keywords ***
 Verify the order confirmation
     Sleep    3s
-    Wait Until Element Is Visible  //h2[text()="Thank you for your order!"]
-    Should Be Equal As Strings    Thank you for your order!    Thank you for your order!
+    Wait Until Element Is Visible  ${confirmation_message}
+    ${message}=    Get Text    ${confirmation_message}
+    Should Be Equal As Strings    ${message}    ${expected_message}

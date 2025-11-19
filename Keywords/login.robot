@@ -17,7 +17,7 @@ Library    Process
 Delete Old Logs
     Remove Files    geckodriver-*.log
 Open SauceDemo Login Page
-    Open Browser    ${URL}    Firefox
+    Open Browser    ${URL}    ${Broswer}
     Maximize Browser Window
 
 #Close Chrome Password Popup

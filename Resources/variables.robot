@@ -1,7 +1,7 @@
 *** Variables ***
 ${URL}      https://www.saucedemo.com
-${Broswer}  chrome
-${user_id}  standard_user
+${Broswer}  Firefox
+${USER_ID}  standard_user
 ${password}  secret_sauce
 ${Edge}  C:/Users/avina/Broswer_Driver/msedgedriver.exe
 @{USERS}
@@ -17,3 +17,13 @@ ${PASSWORD}    secret_sauce
 ...    --disable-popup-blocking
 ...    --disable-notifications
 ...    --disable-blink-features=AutomationControlled
+
+
+#checkout_variable
+${input_first_name}  Ravi
+${input_Last_name}  Kumar
+${input_postal_code}    560037
+${finish_button}    finish
+
+#Complete_Page
+${expected_message}     Thank you for your order!
