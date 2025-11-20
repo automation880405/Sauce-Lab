@@ -1,9 +1,9 @@
 *** Variables ***
 ${URL}      https://www.saucedemo.com
-${Broswer}  chrome
-${USER_ID}  standard_user
+${Broswer}  Firefox
+${USER_ID}  performance_glitch_user
 ${password}  secret_sauce
-${Edge}  C:/Users/avina/Broswer_Driver/msedgedriver.exe
+${Edge}  C:Path
 @{USERS}
 ...    standard_user
 ...    visual_user
