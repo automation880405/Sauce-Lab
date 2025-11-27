@@ -7,6 +7,7 @@ Resource    ../Resources/variables.robot
 Resource    ../Keywords/CartPage.robot
 Resource    ../Keywords/checkout.robot
 Resource    ../Keywords/Complete.robot
+Resource    ../Resources/common_utility.robot
 Library    Process
 
 
@@ -16,18 +17,23 @@ Library    Process
 *** Keywords ***
 Delete Old Logs
     Remove Files    geckodriver-*.log
-Open SauceDemo Login Page
-    Open Browser    ${URL}    ${Broswer}
-    Maximize Browser Window
+#Open SauceDemo Login Page
+  #  Open Browser    ${URL}    ${Broswer}
+   # Maximize Browser Window
 
 #Close Chrome Password Popup
 
+Open SauceDemo Login Page
+    IF     '${Broswer}' == 'chrome'
+        Open Chrome In Incognito
+        Go To    ${URL}
+        Maximize Browser Window
+    ELSE
+        Open Browser    ${URL}    ${Broswer}
+        Maximize Browser Window
+    END
 
 
-Open Chrome Without Popups
-    ${driver}=    Create Custom Driver
-    Create WebDriver    Chrome    driver=${driver}
-    Go To    ${URL}
 
 Login With Valid Credentials
     [Arguments]     ${user_id}     ${password}

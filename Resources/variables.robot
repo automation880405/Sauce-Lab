@@ -1,6 +1,6 @@
 *** Variables ***
 ${URL}      https://www.saucedemo.com
-${Broswer}  Firefox
+${Broswer}  chrome
 ${USER_ID}  performance_glitch_user
 ${password}  secret_sauce
 ${Edge}  C:Path
